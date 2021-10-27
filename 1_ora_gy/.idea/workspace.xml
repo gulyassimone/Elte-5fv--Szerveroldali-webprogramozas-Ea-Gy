@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c2ba139-7929-4e6b-a051-09283e9803dc" name="Default Changelist" comment="" />
+    <list default="true" id="2c2ba139-7929-4e6b-a051-09283e9803dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../2_ora_gy/blog/resources/views/layout/base.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1_ora_gy_laravel/.idea/1_ora_gy_laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../1_ora_gy_laravel/.idea/1_ora_gy_laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1_ora_gy_laravel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../1_ora_gy_laravel/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1xugcmkwfJQP31eRQNbVr3Dj0sI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -22,6 +35,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1_ora_gy_laravel" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -35,6 +49,7 @@
       <updated>1631210468708</updated>
       <workItem from="1631210470027" duration="261000" />
       <workItem from="1631210743766" duration="345000" />
+      <workItem from="1635324271958" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1631210971822</created>
@@ -58,5 +73,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="797" y="268" key="CommitChangelistDialog2/0.0.2560.1400/-1920.5.1920.1040@0.0.2560.1400" timestamp="1631210971435" />
+    <state x="890" y="360" key="FileChooserDialogImpl" timestamp="1635324279943">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="890" y="360" key="FileChooserDialogImpl/0.0.2560.1400/-1920.5.1920.1040@0.0.2560.1400" timestamp="1635324279943" />
   </component>
 </project>
