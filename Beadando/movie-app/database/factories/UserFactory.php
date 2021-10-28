@@ -10,7 +10,7 @@ use Illuminate\Support\Str;
 class UserFactory extends Factory
 {
     protected $model = User::class;
-    private static $order = 0;
+    private static $number = 0;
 
     /**
      * Define the model's default state.
@@ -21,10 +21,17 @@ class UserFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'email' =>  "user" . ++self::$order . "@szerveroldali.hu",
+            'email' => function () {
+                if (self::$number == 0)
+                    $email = "admin@szerveroldali.hu";
+                else
+                    $email = "user" . self::$number. "@szerveroldali.hu";
+                self::$number++;
+                return $email;
+            },
             'email_verified_at' => now(),
-            'password' => 'password', // password
-            'is_admin' => $this->faker->boolean(),
+            'password' => 'password',
+            'is_admin' => (self::$number == 0),
             'remember_token' => Str::random(10),
         ];
     }
