@@ -16,7 +16,7 @@ class MovieFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->realTextBetween(1,100),
+            'title' => $this->faker->realTextBetween(1,30),
             'director' => $this->faker->name,
             'description' => $this->faker->realTextBetween(1,500),
             'image' => $this->faker->text(20),

@@ -16129,3 +16129,9 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.movie-picture{
+    display: block;
+    width:50%;
+    height: auto;
+}
+

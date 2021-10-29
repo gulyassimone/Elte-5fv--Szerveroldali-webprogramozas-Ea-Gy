@@ -16,4 +16,6 @@ class AddMovieController extends Controller
         ]);
         return view('welcome');
     }
+
+
 }

@@ -16,6 +16,6 @@ class RatingsTableSeeder extends Seeder
     public function run()
     {
         DB::table('ratings')->truncate();
-        Rating::factory(300)->create();
+        Rating::factory(1500)->create();
     }
 }

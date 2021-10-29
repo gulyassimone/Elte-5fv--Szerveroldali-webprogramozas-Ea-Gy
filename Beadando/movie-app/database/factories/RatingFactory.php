@@ -19,7 +19,7 @@ class RatingFactory extends Factory
         return [
             'rating'=>$this->faker->numberBetween(1,5),
             'comment'=>$this->faker->realTextBetween(1,255),
-            'user_id'=>$this->faker->numberBetween(1,10),
+            'user_id'=>$this->faker->numberBetween(2,30),
             'movie_id'=>$this->faker->numberBetween(1,100),
         ];
     }
