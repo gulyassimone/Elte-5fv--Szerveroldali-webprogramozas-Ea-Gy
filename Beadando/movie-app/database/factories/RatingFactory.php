@@ -2,8 +2,9 @@
 
 namespace Database\Factories;
 
+use App\Models\Movie;
 use App\Models\Rating;
-use http\Client\Curl\User;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class RatingFactory extends Factory

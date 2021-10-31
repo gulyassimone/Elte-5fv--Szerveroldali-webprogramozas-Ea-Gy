@@ -47,12 +47,12 @@
                 @csrf
                 <div class="col-md-4">
                     <label for="rating" class="form-label">Cím</label>
-                    <select class="form-control" id="rating" name="rating" value={{old('rating')}}>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
+                    <select class="form-control" id="rating" name="rating" >
+                        <option value="1" @if( old('rating') == 1) selected @endif>1</option>
+                        <option value="2" @if( old('rating') == 2) selected @endif>2</option>
+                        <option value="3" @if( old('rating') == 3) selected @endif>3</option>
+                        <option value="4" @if( old('rating') == 4) selected @endif>4</option>
+                        <option value="5" @if( old('rating') == 5) selected @endif>5</option>
                     </select>
                     @error('selection')
                     <span class="text-danger">{{ $message }}</span>
@@ -94,7 +94,7 @@
                                {{ $rating->rating }}</div>
                         </div>
                         <div class="col-md-1 align-self-center">
-                           <i class="fas fa-clock"></i>  {{ $rating->created_at }}
+                           <i class="fas fa-clock"></i>  {{ $rating->update_at }}
                         </div>
                     </div>
                 </div>
