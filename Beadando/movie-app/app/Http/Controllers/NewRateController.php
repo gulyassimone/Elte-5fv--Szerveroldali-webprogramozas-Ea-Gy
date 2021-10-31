@@ -14,7 +14,7 @@ class NewRateController extends Controller
         $validated=$request->validate(
           [
               'rating' => 'required|in:1,2,3,4,5',
-              'comment' => 'string|min:0|max:255',
+              'comment' => 'nullable|string|min:0|max:255',
           ]
         );
 

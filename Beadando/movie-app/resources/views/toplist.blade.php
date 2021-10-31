@@ -25,7 +25,7 @@
                     </div>
                     <div class="col-md-1 flex-row flex-wrap">
                         <b>Rating</b>
-                        {{ $movie->ratings->avg('rating') }}
+                        {{ round($movie->ratings->avg('rating'),2) }}
                     </div>
                     <div class="col-md-1 align-self-center">
                         <a href="/movie/{{ $movie->id }}" class="btn btn-primary">Megtekint <i class="fas fa-angle-right"></i></a>

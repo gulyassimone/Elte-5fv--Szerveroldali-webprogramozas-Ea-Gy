@@ -94,7 +94,7 @@
                                {{ $rating->rating }}</div>
                         </div>
                         <div class="col-md-1 align-self-center">
-                           <i class="fas fa-clock"></i>  {{ $rating->update_at }}
+                           <i class="fas fa-clock"></i>  {{ $rating->updated_at }}
                         </div>
                     </div>
                 </div>
