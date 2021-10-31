@@ -2,7 +2,11 @@
 @section('title', 'Movie data page')
 
 @section('content')
-
+    @if(session()->has('message'))
+        <div class="alert alert-success">
+            {{ session()->get('message') }}
+        </div>
+    @endif
     <div class="justify-content-center">
         <div class="col-12 col-md-10 mb-5 d-flex ">
             <div class="card w-100 bg-info">
@@ -39,9 +43,6 @@
 
     @if(\Illuminate\Support\Facades\Auth::check())
         <h2>Rate</h2>
-        <div>
-            <h1>Add new movie</h1>
-        </div>
         <div row class="col-md-7 mb-5">
             <form row class="g-3 needs-validation" action="/new_rate/{{$movie->id}}" method="POST">
                 @csrf

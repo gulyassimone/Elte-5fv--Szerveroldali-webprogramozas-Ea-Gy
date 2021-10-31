@@ -22,7 +22,6 @@ class NewRateController extends Controller
         if(is_null($exists_ratig)){
             $validated['user_id'] = auth()->user()->id;
             $validated['movie_id'] = $id;
-            var_dump($validated);
             $rating = Rating::create($validated);
         }else{
             $rating=Rating::find($exists_ratig->id);
@@ -31,8 +30,7 @@ class NewRateController extends Controller
             $rating->save();
         }
 
-        $request->session()->flash('rating-created', $rating->rate);
-        return redirect()->route('movie_data', $id);
+        return redirect()->route('movie_data', $id)->with('message', 'Success rating!');;
     }
 
 
