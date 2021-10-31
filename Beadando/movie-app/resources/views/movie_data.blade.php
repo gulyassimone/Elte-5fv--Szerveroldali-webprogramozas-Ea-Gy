@@ -47,7 +47,7 @@
             <form row class="g-3 needs-validation" action="/new_rate/{{$movie->id}}" method="POST">
                 @csrf
                 <div class="col-md-4">
-                    <label for="rating" class="form-label">Cím</label>
+                    <label for="rating" class="form-label">Title</label>
                     <select class="form-control" id="rating" name="rating" >
                         <option value="1" @if( old('rating') == 1) selected @endif>1</option>
                         <option value="2" @if( old('rating') == 2) selected @endif>2</option>

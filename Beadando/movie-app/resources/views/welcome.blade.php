@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <div class="col-md-1 align-self-center">
-                            <a href="/movie/{{ $movie->id }}" class="btn btn-primary">Megtekint <i class="fas fa-angle-right"></i></a>
+                            <a href="/movie/{{ $movie->id }}" class="btn btn-primary">More info <i class="fas fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
