@@ -22,6 +22,7 @@ class CreateRatingsTable extends Migration
             $table->foreign('movie_id')->references('id')->on('movies')->onDelete('cascade');
             $table->integer('rating');
             $table->string('comment')->nullable();
+            $table->unique(['movie_id','user_id']);
         });
     }
 

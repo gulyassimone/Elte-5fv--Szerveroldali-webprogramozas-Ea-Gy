@@ -16,4 +16,10 @@ class Rating extends Model
     public function movie(){
         return $this->belongsTo(Movie::class);
     }
+    public function rules()
+    {
+        return array(
+            array('user_id, movie_id', 'unique')
+        );
+    }
 }

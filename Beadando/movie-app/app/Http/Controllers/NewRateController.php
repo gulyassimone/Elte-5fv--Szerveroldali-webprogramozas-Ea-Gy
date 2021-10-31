@@ -17,6 +17,8 @@ class NewRateController extends Controller
               'comment' => 'string|min:0|max:255',
           ]
         );
+
+
         $validated['user_id'] = auth()->user()->id;
         $validated['movie_id'] = $id;
         var_dump($validated);
